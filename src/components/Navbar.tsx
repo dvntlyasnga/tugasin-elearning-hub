@@ -13,7 +13,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-primary px-4 py-4 shadow-sm">
+    <nav className="bg-primary px-6 py-3 shadow-sm">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
@@ -23,14 +23,14 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden md:flex items-center gap-4">
           {menuItems.map((item) => (
             <NavLink
               key={item.path}
               to={item.path}
               end
               className={({ isActive }) =>
-                `text-foreground font-medium uppercase text-sm tracking-wide transition-all duration-200 px-4 py-2 rounded-full ${
+                `text-foreground font-medium uppercase text-sm tracking-wide transition-all duration-200 px-5 py-2 rounded-full ${
                   isActive
                     ? "bg-nav-activeBg font-bold"
                     : "hover:bg-nav-hover"
@@ -44,9 +44,9 @@ const Navbar = () => {
 
         {/* Profile Avatar */}
         <div className="hidden md:block">
-          <Avatar className="h-10 w-10 border-2 border-foreground">
+          <Avatar className="h-9 w-9 border-2 border-foreground">
             <AvatarImage src="" alt="Profile" />
-            <AvatarFallback className="bg-accent text-accent-foreground font-semibold">
+            <AvatarFallback className="bg-accent text-accent-foreground font-semibold text-sm">
               U
             </AvatarFallback>
           </Avatar>

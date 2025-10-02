@@ -6,7 +6,7 @@ const Dashboard = () => {
       <Navbar />
       <main className="flex items-center justify-center min-h-[calc(100vh-80px)]">
         <h1 className="text-5xl md:text-6xl font-bold text-foreground uppercase tracking-wider">
-          Dashboard Page
+          No Course Added
         </h1>
       </main>
     </div>

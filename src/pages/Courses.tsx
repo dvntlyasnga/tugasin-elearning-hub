@@ -4,10 +4,8 @@ const Courses = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      <main className="flex items-center justify-center min-h-[calc(100vh-80px)]">
-        <h1 className="text-5xl md:text-6xl font-bold text-foreground uppercase tracking-wider">
-          Courses Page
-        </h1>
+      <main className="min-h-[calc(100vh-80px)]">
+        {/* Empty courses page */}
       </main>
     </div>
   );
