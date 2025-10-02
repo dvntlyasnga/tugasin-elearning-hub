@@ -16,11 +16,11 @@ const Navbar = () => {
     <nav className="bg-primary px-6 py-3 shadow-sm">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center">
-          <div className="bg-accent text-accent-foreground font-bold text-lg px-3 py-1 rounded">
+        <NavLink to="/" className="flex items-center">
+          <div className="bg-accent text-accent-foreground font-bold text-lg px-3 py-1 rounded cursor-pointer hover:opacity-90 transition-opacity">
             Ti
           </div>
-        </div>
+        </NavLink>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-4">
